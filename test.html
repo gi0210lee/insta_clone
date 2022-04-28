@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS test</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+
+      .box.on {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      const user_name = "착한 호랑이";
+      const age = 43;
+      const married = false;
+      let girlfriend;
+      const money = null;
+
+      console.log(typeof user_name);
+      console.log(typeof age);
+      console.log(typeof married);
+      console.log(typeof girlfriend);
+      console.log(typeof money);
+
+      console.log(2 - 3);
+      console.log(2 * 3);
+
+      console.log(user_name === "나쁜호랑이");
+      console.log(user_name === "착한호랑이");
+      console.log(age > 30);
+      console.log(age < 30);
+
+      const box = document.querySelector(".box");
+      box.addEventListener("click", function () {
+        // box.style.background = "blue";
+        box.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>
